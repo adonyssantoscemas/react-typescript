@@ -1,35 +1,20 @@
-import { Counter } from './components/Counter'
-import { Usuario } from './components/Usuario'
-import { TimerPadre } from './components/TimerPadre'
-import { ContadorRed } from './components/ContadorRed'
-import { Formulario } from './components/Formulario'
+import { Pagina1 } from "./components/Pagina1";
+import { Pagina2 } from "./components/Pagina2";
+import { DataProvider } from "./context/DataContext";
+import { BotonCambiarData } from "./components/BotonCambiarData";
 
 function App() {
   return (
-    <div className="App">
-      <h1>React + TypeScript</h1>
-      <hr />
+    <DataProvider>
+      <div className="App">
+        
+        <Pagina1 />
+        <Pagina2 />
+        
+        <BotonCambiarData />
 
-		  <Counter />
-
-      <Usuario /> 
-
-      <h2>useEffect - useRef</h2>
-      <hr />
-
-      <TimerPadre />
-      
-      <h2>useReducer</h2>
-      <hr />
-
-      <ContadorRed />
-
-      <h2>customHooks</h2>
-      <br />
-      
-      <Formulario />
-
-    </div>
+      </div>
+    </DataProvider>
   );
 }
 
