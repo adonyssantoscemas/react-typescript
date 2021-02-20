@@ -2,6 +2,7 @@ import { Counter } from './components/Counter'
 import { Usuario } from './components/Usuario'
 import { TimerPadre } from './components/TimerPadre'
 import { ContadorRed } from './components/ContadorRed'
+import { Formulario } from './components/Formulario'
 
 function App() {
   return (
@@ -22,6 +23,12 @@ function App() {
       <hr />
 
       <ContadorRed />
+
+      <h2>customHooks</h2>
+      <br />
+      
+      <Formulario />
+
     </div>
   );
 }
